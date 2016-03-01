@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  ng-app="app" >
+
+<!--
+Inspiration: http://wrapbootstrap.com/preview/WB02K3KK3
+ -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>My Restaurant</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Web fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/formstone/0.8.40/css/background.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+
+  <!-- IE8 support for HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Core Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>          <!-- Plugin Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/cbpAnimatedHeader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/0.8.40/js/core.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- AngularJS -->
+  <!-- Use Angular for convenient interpolation and modular architecture. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular.min.js"></script>
+  <script>
+    ( function() {
+      angular
+        .module( "app", [] );
+    })();
+  </script>
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded cbpAnimatedHeader">
+    <div class="container">
+
+      <!-- Group Brand and toggle for mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <img src="http://placehold.it/90x60?text=LOGO" class="img-responsive" alt="logo">
+        </a>
+      </div>
+
+      <!-- Navigation list -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+          <li><a class="page-scroll" href="#values">Values</a></li>
+          <li><a class="page-scroll" href="#people">Staff</a></li>
+          <li><a class="page-scroll" href="#press">Press</a></li>
+          <li><a class="page-scroll" href="#hours">Hours</a></li>
+          <li><a class="page-scroll" href="#menu">Menu</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+  <!-- Header with a fixed background -->
+
+  <header style="background-image: url('http://placehold.it/800/333/fff?text=Background1')">
+    <div class="intro-content">
+      <img src="http://placehold.it/600x200?text=Awesome Website" class="img-responsive img-centered" alt="">
+    </div>
+    <div class="scroll-down">
+      <a class="btn page-scroll" href="#values"><i class="fa fa-angle-down fa-fw"></i></a>
+    </div>
+  </header>
+
+
+  <section id="values" class="services">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-12 fadeIn">
+          <h2>Our Values</h2>
+          <hr class="colored">
+          <p>
+            We combine the best of Chinese, Japanese cultures and soul.
+          </p>
+        </div>
+      </div>
+      <div class="row content-row">
+        <div class="col-md-4 fadeIn" data-wow-delay=".2s">
+          <div class="media">
+            <div class="pull-left">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="media-body">
+              <h3 class="media-heading">Ingredients</h3>
+              <ul>
+                <li><em>Market-fresh ingredients</em></li>
+                <li><em>All natural and organic</em></li>
+                <li><em>Carefully hand selected</em></li>
+                <li><em>Tested for quality and taste</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fadeIn" data-wow-delay=".4s">
+          <div class="media">
+            <div class="pull-left">
+              <i class="fa fa-cutlery"></i>
+            </div>
+            <div class="media-body">
+              <h3 class="media-heading">Technique</h3>
+              <ul>
+                <li><em>Traditional preparation</em></li>
+                <li><em>Classic combinations</em></li>
+                <li><em>Complex flavor profiles</em></li>
+                <li><em>Hygenic and sanitary</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fadeIn" data-wow-delay=".6s">
+          <div class="media">
+            <div class="pull-left">
+              <i class="fa fa-users"></i>
+            </div>
+            <div class="media-body">
+              <h3 class="media-heading">Community</h3>
+              <ul>
+                <li><em>Karaoke</em></li>
+                <li><em>Private events</em></li>
+                <li><em>Personal catering menus</em></li>
+                <li><em>Nightly community specials</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fixed Background 2 with a message -->
+
+  <aside class="cta-quote" style="background-image: url('http://placehold.it/800/a9d/fff?text=Background2');">
+    <div class="container fadeIn">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <span class="quote">Truly great food is a combination of quality ingredients, creativity, and attention to detail.</span>
+          <hr class=" colored">
+          <a class="btn btn-outline-light page-scroll" href="#contact">Try Some of Ours</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ABOUT / People carousel -->
+
+  <section id="people">
+    <div class="container text-center fadeIn">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Staff</h2>
+          <p>We are a group of professionals and artisan chefs with a passion for culinary excellence.</p>
+          <hr class="colored">
+        </div>
+      </div>
+
+      <div class="row content-row">
+        <div class="col-lg-12">
+
+          <div class="about-carousel">
+
+            <div class="item" ng-repeat="n in [1,2,3,4,5,6]">
+              <img ng-src="http://placehold.it/300?text=person{{n}}" class="img-responsive" alt="">
+              <div class="caption">
+                <h3>{{$index}} Yngwie Malmsteen</h3>
+                <hr class="colored">
+                <p><em>Owner</em>
+                </p>
+                <ul class="list-inline social">
+                  <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                  <li><a href="#"><i class="fa fa-envelope-o fa-fw"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials carousel -->
+
+  <section id="press" class="testimonials bg-gray" >
+    <div class="container fadeIn">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Press</h2>
+          <hr class="colored">
+          <p>Here's what the critics are saying.</p>
+        </div>
+      </div>
+
+      <div class="row content-row">
+        <div class="col-lg-10 col-lg-offset-1">
+
+          <div class="testimonials-carousel">
+
+            <div class="item" ng-repeat="n in [1,2,3,4,5,6]">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="lead">"{{n}} Working with Vitality was both a valuable and rewarding experience."</p>
+                  <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+                  <div class="testimonial-info">
+                    <div class="testimonial-img">
+                      <img src="http://placehold.it/200?text=:)" class="img-circle img-responsive" alt="">
+                    </div>
+                    <div class="testimonial-author">
+                      <span class="name">Taro Yamada</span>
+                      <p class="small">CEO of Some company</p>
+                      <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--/.item-->
+
+          </div><!--/.testimonials-carousel-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </section>
+
+  <!-- Subscription form -->
+
+  <section class="cta-form bg-dark">
+    <div class="container text-center">
+      <h3>Subscribe to our newsletter!</h3>
+      <hr class="colored">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <!-- MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <!-- Replace the form action in the line below with your MailChimp embed action! For more informatin on how to do this please visit the Docs! -->
+            <form role="form" action="" method="" id="" name="" novalidate>
+              <div class="input-group input-group-lg">
+                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                <span class="input-group-btn">
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
+                </span>
+              </div>
+              <div id="mce-responses">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+            </form>
+          </div>
+          <!-- End MailChimp Signup Form -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards (Three columns) -->
+
+  <section id="hours" class="pricing" style="background-image: url('http://placehold.it/800/28a/fff?text=Background3')">
+    <div class="container fadeIn">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2>Hours</h2>
+          <hr class="colored">
+          <p>We serve breakfast, lunch, and dinner every day of the week.</p>
+        </div>
+      </div>
+
+      <div class="row content-row">
+        <div class="col-md-4">
+          <div class="pricing-item">
+            <h3>Breakfast</h3>
+            <hr class="colored">
+            <ul class="list-group">
+              <li class="list-group-item"><em>Mon - Thu: 7am - 11am</em></li>
+              <li class="list-group-item"><em>Fri: 7am - 12pm</em></li>
+              <li class="list-group-item"><em>Sat: 7am - 3pm</em></li>
+              <li class="list-group-item"><em>Sun: All Day</em></li>
+            </ul>
+            <hr class="colored">
+            <a href="#" class="btn btn-outline-dark">Book Now</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-item">
+            <h3>Lunch</h3>
+            <hr class="colored">
+            <ul class="list-group">
+              <li class="list-group-item"><em>Mon - Thu: 11am - 3pm</em></li>
+              <li class="list-group-item"><em>Fri: 11am - 5pm</em></li>
+              <li class="list-group-item"><em>Sat: 11am - 3pm</em></li>
+              <li class="list-group-item"><em>Sat: 11am - 3pm</em></li>
+            </ul>
+            <hr class="colored">
+            <a href="#" class="btn btn-outline-dark">Book Now</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-item">
+            <h3>Dinner</h3>
+            <hr class="colored">
+            <ul class="list-group">
+              <li class="list-group-item"><em>Mon - Thu: 5pm - 10pm</em></li>
+              <li class="list-group-item"><em>Fri: 5pm - Late</em></li>
+              <li class="list-group-item"><em>Sat: 5pm - Late</em></li>
+              <li class="list-group-item"><em>Sun: 5pm - 10pm</em></li>
+            </ul>
+            <hr class="colored">
+            <a href="#" class="btn btn-outline-dark">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu carousel -->
+
+  <section id="menu">
+    <div class="container fadeIn">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2>Menu</h2>
+          <hr class="colored">
+          <p>Here is a selection of items from our menu. Please call for additional details.</p>
+        </div>
+      </div>
+
+      <div class="row content-row">
+        <div class="col-lg-12">
+          <div class="portfolio-gallery">
+
+            <!-- IMG-SIZE-600x450 -->
+            <div class="item" ng-repeat="n in [1,2,3,4,5,6,7]">
+              <a href="#" class="gallery-link" title="Cake">
+                <img src="http://placehold.it/300x200?text={{n}}" class="img-responsive img-centered" alt="">
+              </a>
+            </div><!--/.item-->
+
+          </div><!--/.portfolio-gallery-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer" style="background-image: url('http://placehold.it/1/666/fff?text=Footer')">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 contact-details">
+          <h4><i class="fa fa-phone"></i> Call</h4>
+          <p>202-213-4567</p>
+        </div>
+        <div class="col-md-4 contact-details">
+          <h4><i class="fa fa-map-marker"></i> Visit</h4>
+          <p>1234 Macy Place
+            <br>Capitol Hills, DC 20001</p>
+          </div>
+          <div class="col-md-4 contact-details">
+            <h4><i class="fa fa-envelope"></i> Email</h4>
+            <p><a href="mailto:mail@example.com">mail@example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="row social">
+          <div class="col-lg-12">
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-lg-12">
+            <p class="small">&copy; 2016 Masatoshi Nishiguchi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
